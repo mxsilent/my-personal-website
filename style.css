@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.border {
+    border-color: white;
+    border-style: solid;
+}
+
 .main-header {
     height: 100vh;
     width: 100%;
@@ -31,16 +36,20 @@ span  {
     color: #f9004d;
 }
 
-nav ul li {
+nav ul li  {
     list-style-type: none;
     display: inline-block;
     padding: 10px 25px;
     font-weight: bold;
     text-transform: capitalize;
-    color: #FFF;
 }
 
-nav ul li:hover {
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
     color: #f9004d;
 }
 
@@ -49,6 +58,23 @@ nav ul li:hover {
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
+}
+
+.section-headshot{
+    width: 50%;
+    height: auto;
+    float: right;
+    overflow: hidden;
+}
+
+.section-headshot img {
+    border-radius: 50px;
+    height: 68vh;
+    position: absolute;
+    bottom: 15%;
+    right: 20%;
+    
+    
 }
 
 h1 {
